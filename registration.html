@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detikTravel | Explore Thailand</title>
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seaweed+Script&display=swap" rel="stylesheet">
+
+    <!-- boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <!-- header section -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo-detiktravel.png" alt="">
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#about">Tentang Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#news">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="#">Registrasi</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- registration form -->
+
+    <section class="reg" id="reg">
+        <div class="heading">
+            <h1>Registrasi</h1>
+            <p>Lengkapi data diri kamu dengan benar</p>
+        </div>
+    
+        <form action="#" class="form">
+            <div class="input-box">
+                <input type="text" id="fullname" placeholder="Nama lengkap*" required>
+            </div>
+            <div class="input-box">
+                <input type="text" id="email" placeholder="Email*" required>
+            </div>            
+            <div class="input-box">
+                <input type="text" id="notelp" placeholder="Nomor Telepon*" required>
+                <p>Isi hanya angka</p>
+            </div>
+            <div class="input-box-long">
+                <textarea id="alasan" name="alasan" rows="4" cols="50" placeholder="Alasan mengikuti program “Explore Thailand by Detiktravel”*" required></textarea>
+            </div>
+    
+            <div class="upload">
+                <div class="img-area">
+                    <label for="profile-pic">
+                        <i class='bx bxs-plus-circle'></i>
+                        <p>Upload foto profil</p>
+                    </label>
+                    <input type="file" id="profile-pic" accept="image/*" required>
+                </div>
+                
+                <div class="upload-text">
+                    <p>
+                        1. Format file: .png, .jpg, .jpeg <br>
+                        2. Maksimal ukuran file 1MB <br>
+                        3. Disarankan foto mencakup 3:4 badan
+                    </p>
+                </div>
+            </div>
+    
+            <div class="input-box">
+                <input type="text" id="instagram" name="instagram" placeholder="Link Instagram*" required>
+                <p>Contoh: https://www.instagram.com/yourusername</p>
+            </div>            
+    
+            <div class="checkbox">
+                <input type="checkbox" id="s&k" name="s&k" required />
+                <label for="s&k">Dengan menekan tombol "Daftar", Saya menyetujui <span style="color: #00D1FF;">syarat dan ketentuan</span> yang berlaku*</label>
+            </div>
+    
+            <button type="submit">Daftar</button>
+        </form>
+    </section>
+    
+    
+    
+
+    <!-- footer -->
+    
+    <section class="footer" id="footer">
+
+        <div class="content">
+            <a href="#" class="title">
+                <img src="img/homepage/ExploreThailand.png" alt="">
+            </a>
+            <h3>By</h3>
+            <a href="#" class="logo">
+                <img src="img/logo-detiktravel.png" alt="">
+            </a>
+        </div>
+    
+        <div class="footer-content">
+            <div class="text">
+                <p>Bergabunglah dalam "Explore Thailand bersama Detiktravel"! Kompetisi ini terbuka bagi pembaca Detiktravel yang ingin menikmati perjalanan ke Thailand. Kunjungi destinasi menakjubkan seperti pantai Pak Bia Island dan destinasi lain di Phuket, Thailand. Jadi bagian dari perjalanan kami dan menangkan hadiah jalan-jalan yang tak terlupakan!</p>
+            </div>
+    
+            <div class="connect">
+                <p>Connect With Us</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/DetikTravel/?locale=id_ID" class="fab fa-facebook-f" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://x.com/detikTravel" class="fab fa-twitter" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://www.instagram.com/detiktravel" class="fab fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://www.linkedin.com/company/detik-com/?originalSubdomain=id" class="fab fa-linkedin" target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://www.youtube.com/@detikcom" class="fab fa-youtube" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+            </div>
+        </div>
+    
+        <hr class="solid">
+    
+        <div class="copyright">
+            Copyright &copy; 2023 detikcom. All rights reserved
+        </div>
+    
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
