@@ -9,4 +9,7 @@ function changeBackground(imageSrc) {
     // size & position
     homeSection.style.backgroundSize = 'cover';
     homeSection.style.backgroundPosition = 'center';
+
+    // box shadow
+    homeSection.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)';
 }

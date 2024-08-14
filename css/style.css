@@ -143,7 +143,6 @@ section{
     top: 0;
 }
 
-
 /* home */
 
 .home {
@@ -161,6 +160,7 @@ section{
     overflow: hidden;
     padding: 20px; 
     transition: background-image 0.8s ease-in-out, background-size 0.8s ease-in-out, background-position 0.8s ease-in-out;
+    transition: box-shadow 0.3s ease;
 }
 
 .container {
@@ -230,6 +230,8 @@ section{
     border-radius: 16px;
     object-fit: cover; 
     transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Same box shadow value */
 }
 
 .home .slider img:hover {
@@ -255,7 +257,7 @@ section{
     transition: background-color 0.3s ease, border 0.3s ease;
     margin-top: 25px; 
     margin-left: 15px;
-    box-shadow: 0 0 50px 2px #FFC73C, 0 0 5px 4px #FFC73C, 0 0 20px 4px #FFC73C;
+    box-shadow: 0 0 10px 1px #FFE03C, 0 0 40px 3px #FFE03C, 0 0 20px 4px #FFE03C;
 }
 
 .home a.btn:hover { 
@@ -311,7 +313,7 @@ section{
     margin-top: 1.2rem; 
     margin-bottom: 3rem;
     display: inline-block; 
-    box-shadow: 0 0 50px 2px #FFC73C, 0 0 5px 4px #FFC73C, 0 0 20px 4px #FFC73C;
+    box-shadow: 0 0 10px 1px #FFE03C, 0 0 40px 3px #FFE03C, 0 0 20px 4px #FFE03C;
 }
 
 .about a.btn:hover {
@@ -906,11 +908,26 @@ section{
 @media (max-width: 768px){
     .header {
         flex-direction: column;
-        padding: 3px 3%s;
-        height: 50px;
+        padding: 1px 20px; 
         align-items: center;
+        justify-content: space-between; 
+        height: auto; 
     }
     
+    .navbar-toggler {
+        position: relative; 
+        padding: 8px;
+        margin-left: auto; 
+    }
+
+    .header .logo img {
+        position: absolute; 
+        left: 3%; 
+        top: 10px; 
+        height: 2rem; 
+        z-index: 1000; 
+    }
+
     .navbar-collapse {
         background-color: rgba(255, 255, 255, 0.9);
         border-radius: 0 0 50px 50px;
@@ -931,24 +948,9 @@ section{
         margin: 10px 0;
     }
 
-    .navbar-toggler {
-        position: absolute;
-        right: 3%;
-        top: 10px;
-    }
-
-    .header .logo img{
-        position: absolute;
-        left: 3%;
-        top: 10px;
-    }
-
     .navbar-collapse.show {
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 0 0 50px 50px;
-        padding: 20px 0;
+        background-color: rgba(255, 255, 255, 0.9); /* Same background as header */
     }
-
 
     /* home section*/
 
@@ -964,11 +966,11 @@ section{
         display: flex;
         flex-direction: column;
         align-items: flex-start; 
-        margin: 0;
         padding: 20px;
         text-align: left; 
-        margin-left: 20px;
+        margin-left: 10px;
         margin-right: 0;
+        margin-bottom: 50px;
     }
 
     .home .title img {
@@ -1002,7 +1004,7 @@ section{
         justify-content: center; 
         padding: 10px 0; 
         position: relative;
-        margin-top: auto;
+        margin-top: 50px;
         margin-left: 0;
     }
 
@@ -1203,7 +1205,6 @@ section{
     }
     
 }
-
 
 
 
